@@ -1,49 +1,81 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: orbitron , sans-serif;
+    font-family: orbitron, sans-serif;
 }
 
-body{
-    background: linear-gradient(90deg, #8B4513, #0e197c);
+body {
+    background: linear-gradient(135deg, #2C003E, #6A0572);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
-.relogio{
+
+.relogio {
     display: flex;
-   background: transparent;
-   justify-content: space-between;
-   align-items: center;
-   padding: 10px;
+    background: transparent;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
     width: 550px;
     height: 200px;
-    box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
 }
-.relogio div{
-background-color: #000000;
-width: 170px;
-height: 150px;
-display: flex;
-align-items: center;
-justify-content: center;
-box-shadow: 0px 10px 15px rgba(0,0,0,0.5);
-flex-direction: column;
-letter-spacing: 3px;
-border-radius: 8px;
-color: #ffff;
 
-    
+.relogio div {
+    background-color: #000000;
+    width: 170px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.5);
+    flex-direction: column;
+    letter-spacing: 3px;
+    border-radius: 8px;
+    color: #ffff;
+
+
 
 }
-.relogio span{
+
+.relogio span {
     font-size: 60px;
+    text-shadow: 0px 0px 10px #fff;
 }
-.relogio span.tempo{
+
+.relogio span.tempo {
     font-size: 10px;
+    text-shadow: 0px 0px 10px #fff;
+}
+
+@media screen and (max-width: 544px) {
+
+    body {
+        padding: 10px 4%;
+    }
+
+    .relogio {
+        width: 90%;
+        height: 100px;
+        padding: 3%;
+    }
+
+    .relogio div {
+        width: 90px;
+        height: 80px;
+    }
+
+    .relogio span {
+        font-size: 40px;
+    }
+
+    .relogio span.tempo {
+        font-size: 8px;
+    }
 }
